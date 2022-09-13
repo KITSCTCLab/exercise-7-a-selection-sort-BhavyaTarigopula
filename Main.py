@@ -1,14 +1,15 @@
 from typing import List
 
-def selectionSort(array, size) -> List[int]:
-  for i in range (len(arr)):
-    arr = i
-    for j in range (i+1,len(arr)):
-      if arr[min] > arr[j]:
-        min = j
-  arr[i],arr[min] = arr[min],arr[i]   
-
-# Do not change the following code
+def insertionSort(arr) -> List[int]:
+  for i in range(i,len(arr))
+   temp = arr[i]
+      j = i -1
+    while j >=0 and temp < arr[j]
+        arr[j+1] = arr[j]
+           j = j - 1
+        arr[j+1] = temp
+        
+# data = [9, 5, 1, 4, 3]
 input_data = input()
 data = []
 for item in input_data.split(', '):
@@ -16,4 +17,4 @@ for item in input_data.split(', '):
     data.append(int(item))
   elif item.lstrip("-").isnumeric():
     data.append(int(item))
-print(selectionSort(data, len(data)))
+print(insertionSort(data))
